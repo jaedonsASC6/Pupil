@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <title>IO Education Authentication Server</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCd5wQZfbU_-z3mn9fH_IX6KlnuANyNTMw",
+      authDomain: "pupilfish-3470e.firebaseapp.com",
+      databaseURL: "https://pupilfish-3470e.firebaseio.com",
+      projectId: "pupilfish-3470e",
+      storageBucket: "pupilfish-3470e.appspot.com",
+      messagingSenderId: "295769299701",
+      appId: "1:295769299701:web:19624e4707d8587611c3bc",
+      measurementId: "G-S46C05B0XP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div id="messages">
+
+</div>
+
+  <div class="main">
+	          <div class="row">
+    <div class="login-group">
+      <div class="span8 offset2">
+        <div class="centered-title">
+              <img src="https://s3.amazonaws.com/casenex-public/authserver-2016/PupilPath-White.png" alt="Pupilpath white" />
+        </div>
+      </div>
+      <div class="span6 offset3">
+        <div class="sign-in-box">
+          <div style="margin-bottom: 5px;">
+            <h3>Please Sign In</h3>
+          </div>
+          
+
+<div class="login-container">
+    <form id="sign_in_form" accept-charset="UTF-8" ><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="S75SftVe4YxISiLjYDOLcS3I9nVZvX6mf98NlPm1G3HTtKKFCWBQjdFzZLvraK7x0SVrtPQjkM7GQoRLG1wvvw==" />
+    <div id="user_search">
+        <input class="form-input" placeholder="Email / ID" type="text" name="user[username]" id="user_username"/>
+        <div>
+            
+        </div>
+    </div>
+
+    <div id="username_label" style="display: none"></div>
+
+    <input class="form-input" placeholder="Password" type="password" name="user[password]" id="user_password" value="value" />
+
+    <button class="form-button" id="user_back", type="button" style="display: none;">Back</button>
+    <button class="form-button" id="sign_in" >Sign In</button>
+    <label>
+        <input type="checkbox" id="rememberBox" style="margin: 0px;"> Remember
+        my email / id
+    </label>
+
+</form>
+
+    <p>Forgot your password?</p>
+</div>
+
+<div id="loginNotice" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <h3>Same Secure Sign-In - New Look</h3>
+    </div>
+    <div class="modal-body">
+        Please enter the same information you usually do.
+        <br>
+        Enter your email address, click next and enter your password.
+    </div>
+    <div class="modal-footer">
+    <div class="checkbox pull-left"><label><input id="disableNotice" type="checkbox"> Don't show this again.</label></div>
+        
+        
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+    </div>
+</div>
+
+
+          <div class="centered-title">
+            <p>Back to Products</p>
+          </div>
+
+        </div>
+        <div class="centered-title">
+           <p>© IO Education - 2017</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+  </div>
+  
+</div>
+<br/>
+</body>
+</html>
